@@ -14,6 +14,7 @@
     <body>
         <div ALIGN=center> 
         <h1>Welcome à vous</h1>
+        
         <p> Petit panel de différents exercices sur les SERVLETS!!!</p>
         </div>
         <%@include file="menu.jsp" %>     

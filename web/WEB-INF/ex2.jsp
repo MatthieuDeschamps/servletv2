@@ -11,24 +11,24 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Exercice two</title>
     </head>
-    <body ALIGN=center>
-        <h1>Objets implicites</h1>
-        
+    <body>
+        <h1 ALIGN=center>Objets implicites</h1>
+
         <div>
-            <ul>
-                <li> le protocole implanté par le serveur :  </li>
-                <li> le protocole utilisé par le client : </li>
-                <li> le nom du serveur : </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>         
+            <%
+                out.println("<br>" + "Protocole implanté par le serveur : " + request.getProtocol());
+                out.println("<br>" + "Protocole utilisé par le client : " + request.getScheme());
+                out.println("<br>" + "Nom du serveur : " + request.getServerName());
+                out.println("<br>" + "Port du serveur : " + request.getServerPort());
+                out.println("<br>" + "Adresse IP du serveur : " + request.getRemoteHost());
+                out.println("<br>" + "Adresse IP du client : " + request.getRemoteAddr());
+                out.println("<br>" + "Méthode http : " + request.getMethod());
+                out.println("<br>" + "Le nom de ce script : " + request.getRequestURL());
+                out.println("<br>" + "Le répertoire java est : " + request.getPathTranslated());
+            %>
+
         </div>
-        <h4 ALIGN=center>
-            <a href="/Servlets/">Retour</a>
-        </h4>
+        
+            <%@include file="footer.jsp" %> 
     </body>
 </html>

@@ -21,8 +21,7 @@
                 out.println("<h" + i + " ALIGN=center>" + "Cool cette JSP est en affichage h " + i);
             }
         %>
-        <h4 ALIGN=center>
-            <a href="/Servlets/">Retour</a>
-        </h4>
+        
+        <%@include file="footer.jsp" %> 
     </body>
 </html>
